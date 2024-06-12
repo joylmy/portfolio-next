@@ -7,7 +7,7 @@ const siteMetadata = {
   description: 'A blog created with Next.js and Tailwind.css',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: '',
+  siteUrl: 'https://www.google.com',
   siteRepo: 'https://github.com/joylmy/portfolio-next',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
