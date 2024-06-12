@@ -2,8 +2,10 @@
 
 # dependencies
 /node_modules
+/.github/*
 /.pnp
 .pnp.js
+/.vscode/*
 /.yarn/*
 !/.yarn/releases
 !/.yarn/plugins

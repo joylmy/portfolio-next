@@ -1,14 +1,14 @@
 /** @type {import("pliny/config").PlinyConfig } */
 // TODO: update siteURL, logo, git repo
 const siteMetadata = {
-  title: 'Mengyuan LiPortfolio',
+  title: 'Mengyuan Li',
   author: 'Mengyuan Li',
   headerTitle: 'Mengyuan Li',
   description: 'A blog created with Next.js and Tailwind.css',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteUrl: '',
+  siteRepo: 'https://github.com/joylmy/portfolio-next',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
   //mastodon: 'https://mastodon.social/@mastodonuser',
@@ -17,9 +17,9 @@ const siteMetadata = {
   //twitter: 'https://twitter.com/Twitter',
   //facebook: 'https://facebook.com',
   //youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
+  linkedin: 'https://www.linkedin.com/in/mengyuan-li-a1b059104/',
   //threads: 'https://www.threads.net',
-  instagram: 'https://www.instagram.com',
+  //instagram: 'https://www.instagram.com',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
