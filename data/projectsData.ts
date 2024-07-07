@@ -1,18 +1,20 @@
 interface Project {
-  title: string,
-  description: string,
-  href?: string,
-  imgSrc?: string,
+  title: string
+  description: string
+  href?: string
+  imgSrc?: string
+  tags?: string[]
 }
 
 const projectsData: Project[] = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
+    title: 'Personal Portfolio',
+    description: `My personal website and blog is a place where I share things I am learning and enjoying. It is built with Next.js, TailwindCSS, and TypeScript, and MDX is used to manage Markdown content.`,
+    // TODO: add img src when homepage redone
     imgSrc: '/static/images/google.png',
+    // TODO: change website when deployed
     href: 'https://www.google.com',
+    tags: ['NextJS', 'TailwindCSS', 'TypeScript', 'MDX'],
   },
   {
     title: 'The Time Machine',
