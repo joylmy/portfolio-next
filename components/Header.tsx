@@ -31,7 +31,11 @@ const Header = () => {
           .map((link) =>
             link.title === 'Resume' ? (
               <Link href="/static/pdf/resume.pdf" legacyBehavior key={link.title}>
-                <a target="_blank" rel="noopener noreferrer">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hidden font-medium text-gray-900 dark:text-gray-100 sm:block"
+                >
                   Resume
                 </a>
               </Link>
