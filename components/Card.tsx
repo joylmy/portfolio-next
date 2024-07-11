@@ -1,8 +1,19 @@
+'use client'
 import Image from './Image'
 import Link from './Link'
+import React, { useState } from 'react'
 
-const Card = ({ title, description, imgSrc, href }) => (
-  <div className="md max-w-[544px] p-4 md:w-1/2">
+const Card = ({ title, description, imgSrc, href }) => {
+  const [isHovered, setIsHovered] = useState(false)
+
+
+
+  return (
+  <div 
+    className={`md max-w-[544px] p-4 md:w-1/2 transition-transform duration-300 ${isHovered ? 'transform -translate-y-1 ':''}`}
+    onMouseEnter={()=>setIsHovered(true)}
+    onMouseLeave={()=>setIsHovered(false)}
+  >
     <div
       className={`${
         imgSrc && 'h-full'
@@ -51,6 +62,8 @@ const Card = ({ title, description, imgSrc, href }) => (
       </div>
     </div>
   </div>
-)
+  );
+
+}
 
 export default Card
