@@ -15,6 +15,9 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      boxShadow: {
+        white: '0 3px 10px -5px rgba(255, 255, 255, 0.3)',
+      },
       lineHeight: {
         11: '2.75rem',
         12: '3rem',

@@ -6,8 +6,6 @@ import React, { useState } from 'react'
 const Card = ({ title, description, imgSrc, href, tags }) => {
   const [isHovered, setIsHovered] = useState(false)
 
-
-
   return (
     <div
       className={`md max-w-[544px] p-4  md:w-1/2 `}
@@ -17,9 +15,9 @@ const Card = ({ title, description, imgSrc, href, tags }) => {
       <div
         className={`${
           imgSrc && 'h-full'
-        }  overflow-hidden rounded-md border-2 border-gray-200 border-opacity-60 transition-transform duration-300 dark:border-gray-700 ${
+        }  overflow-hidden rounded-md border-2 border-gray-200 border-opacity-60 shadow-lg transition-transform duration-300 dark:border-gray-700  ${
           isHovered
-            ? 'dark:border-darkPrimary-500 -translate-y-1 transform border-2 border-primary-500 border-opacity-60'
+            ? '-translate-y-1 transform border-2 border-primary-500 border-opacity-60 dark:border-yellow-500 dark:shadow-white'
             : ''
         }`}
       >
@@ -58,7 +56,7 @@ const Card = ({ title, description, imgSrc, href, tags }) => {
             {tags &&
               tags.map((t) => {
                 return (
-                  <div className="dark:bg-darkPrimary-500 rounded-md bg-primary-300 px-2 py-1 text-sm font-medium text-gray-500 dark:text-slate-100">
+                  <div className="rounded-md bg-primary-300 px-2 py-1 text-sm font-medium text-gray-500 dark:bg-darkPrimary-500 dark:text-slate-100">
                     {t}
                   </div>
                 )
@@ -68,7 +66,7 @@ const Card = ({ title, description, imgSrc, href, tags }) => {
             {href && (
               <Link
                 href={href}
-                className="dark:text-darkPrimary-400 dark:hover:text-darkPrimary-600 text-base font-medium leading-6 text-primary-500 hover:text-primary-600"
+                className="text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:text-darkPrimary-400 dark:hover:text-darkPrimary-600"
                 aria-label={`Link to ${title}`}
               >
                 Learn more &rarr;
@@ -79,7 +77,6 @@ const Card = ({ title, description, imgSrc, href, tags }) => {
       </div>
     </div>
   )
-
 }
 
 export default Card
