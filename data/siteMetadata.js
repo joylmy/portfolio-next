@@ -4,7 +4,7 @@ const siteMetadata = {
   title: 'Mengyuan Li',
   author: 'Mengyuan Li',
   headerTitle: 'Mengyuan Li',
-  description: 'A blog created with Next.js and Tailwind.css',
+  description: 'My own place for sharing my journey',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://www.google.com',
