@@ -15,6 +15,9 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      transformOrigin:{
+      '0':'0%'
+      },
       boxShadow: {
         white: '0 3px 10px -5px rgba(255, 255, 255, 0.3)',
       },

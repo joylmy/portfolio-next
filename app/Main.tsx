@@ -2,20 +2,18 @@ import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { formatDate } from 'pliny/utils/formatDate'
-import NewsletterForm from 'pliny/ui/NewsletterForm'
+// import NewsletterForm from 'pliny/ui/NewsletterForm'
+import Hero from '@/components/home/Hero'
+import { motion, useScroll } from 'framer-motion'
 
-const MAX_DISPLAY = 5
+
+// const MAX_DISPLAY = 5
 
 export default function Home({ posts }) {
   return (
     <>
       {/* Hero */}
-      <div>
-        <p>
-          Hi I’m Mengyuan Li, aka Joy By day, I build cloud solutions. By night, I rescue cats /
-          coordinate music (上下翻动效果）
-        </p>
-      </div>
+      < Hero />
 
       {/* About Me */}
 

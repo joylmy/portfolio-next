@@ -1,7 +1,9 @@
+'use client'
 import { ReactNode } from 'react'
 import type { Authors } from 'contentlayer/generated'
 import SocialIcon from '@/components/social-icons'
 import Image from '@/components/Image'
+import { motion, useScroll, useSpring } from 'framer-motion'
 
 interface Props {
   children: ReactNode
@@ -10,10 +12,21 @@ interface Props {
 
 export default function AuthorLayout({ children, content }: Props) {
   const { name, avatar, occupation, company } = content
+  const { scrollYProgress } = useScroll()
+
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  })
 
   return (
     <>
       <div className="pt-4">
+        <motion.div
+          className="fixed left-0 right-0 top-0 h-1 origin-left bg-primary-200 dark:bg-darkPrimary-200"
+          style={{ scaleX }}
+        />
         <div className="mb-4 flex flex-col-reverse items-center justify-between sm:flex-row sm:items-center">
           <div className="text-center sm:text-left">
             <h1 className="text-xl font-bold md:text-3xl lg:text-4xl">Mengyuan Li</h1>
