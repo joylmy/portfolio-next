@@ -5,6 +5,7 @@ import { formatDate } from 'pliny/utils/formatDate'
 // import NewsletterForm from 'pliny/ui/NewsletterForm'
 import Hero from '@/components/home/Hero'
 import { motion, useScroll } from 'framer-motion'
+import AboutMe from '@/components/home/AboutMe'
 
 
 // const MAX_DISPLAY = 5
@@ -16,7 +17,7 @@ export default function Home({ posts }) {
       < Hero />
 
       {/* About Me */}
-
+      <AboutMe />
       {/* Friends' Regard */}
       {/* Latest Articles */}
       {/* <div>

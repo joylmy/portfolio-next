@@ -47,14 +47,14 @@ const Hero = () => {
 
 
   return (
-    <div className="space-y-5 md:my-5 ">
+    <div className="space-y-5 md:my-5">
       {/* Text and image */}
-      <div className="flex flex-col-reverse gap-8 md:flex-row justify-between ">
+      <div className="flex flex-col-reverse justify-between gap-8 md:flex-row">
         {/* Head - motion effects */}
         <div className="space-y-5">
           {/* Text */}
           <div className="space-y-5">
-            <div className="space-y-4 text-4xl md:text-5xl font-bold ">
+            <div className="space-y-4 text-4xl font-bold md:text-5xl ">
               <h1>🐯 Hi I’m Mengyuan Li</h1>
               <h1>
                 aka{' '}
@@ -83,7 +83,7 @@ const Hero = () => {
             </div>
             <div className="space-y-4 text-2xl font-normal md:text-3xl">
               <h1>By day, I build cloud solutions</h1>
-              <h1 >
+              <h1>
                 By night, I {''}
                 <div className="inline-grid h-8 overflow-hidden ">
                   <div ref={scope}>
