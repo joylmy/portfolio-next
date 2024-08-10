@@ -18,4 +18,5 @@ const CustomLink = ({ href, ...rest }: LinkProps & AnchorHTMLAttributes<HTMLAnch
   return <a target="_blank" rel="noopener noreferrer" href={href} {...rest} />
 }
 
+
 export default CustomLink

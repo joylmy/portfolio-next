@@ -1,3 +1,5 @@
+import { EMAIL,SITE_GITHUB_URL,SITE_LINKEDIN_URL } from "lib/constant"
+
 /** @type {import("pliny/config").PlinyConfig } */
 // TODO: update siteURL, logo, git repo
 const siteMetadata = {
@@ -12,12 +14,12 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
   //mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'imli.mengyuan@gmail.com',
-  github: 'https://github.com/joylmy',
+  email: EMAIL,
+  github: SITE_GITHUB_URL,
   //twitter: 'https://twitter.com/Twitter',
   //facebook: 'https://facebook.com',
   //youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com/in/mengyuan-li-a1b059104/',
+  linkedin: SITE_LINKEDIN_URL,
   //threads: 'https://www.threads.net',
   //instagram: 'https://www.instagram.com',
   locale: 'en-US',

@@ -1,6 +1,7 @@
 'use client'
 
 // import React from "react"
+import Connect  from "./connect"
 
 const AboutMe = () => {
 
@@ -12,7 +13,7 @@ const AboutMe = () => {
       </div>
       {/* set up cards */}
       <div>
-
+        <Connect />
       </div>
     </div>
   )
