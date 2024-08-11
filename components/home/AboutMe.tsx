@@ -2,6 +2,7 @@
 
 // import React from "react"
 import Connect  from "./connect"
+import SkillCard from "./skill"
 
 const AboutMe = () => {
 
@@ -14,6 +15,7 @@ const AboutMe = () => {
       {/* set up cards */}
       <div className="mt-12">
         <Connect />
+        <SkillCard />
       </div>
     </div>
   )
