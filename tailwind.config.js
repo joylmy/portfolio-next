@@ -15,11 +15,12 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      transformOrigin:{
-      '0':'0%'
+      transformOrigin: {
+        0: '0%',
       },
       boxShadow: {
-        white: '0 3px 10px -5px rgba(255, 255, 255, 0.3)',
+        'feature-card': '0 -1px 3px 0 rgb(0 0 0 / 0.05)',
+        'feature-card-dark': '0 0 0 1px rgb(255 255 255 / 0.06), 0 -1px rgb(255 255 255 / 0.1)',
       },
       lineHeight: {
         11: '2.75rem',
@@ -76,3 +77,5 @@ module.exports = {
   },
   plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 }
+
+
