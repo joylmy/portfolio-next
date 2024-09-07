@@ -10,10 +10,10 @@ const AboutMe = () => {
     <div className="relative my-24 ">
       {/* Title */}
       <div>
-        <h2 className="text-3xl font-bold leading-tight md:text-4xl text-center">About me</h2>
+        <h2 className="text-center text-3xl font-bold leading-tight md:text-4xl">About me</h2>
       </div>
       {/* set up cards */}
-      <div className="mt-12">
+      <div className="mt-12 gap-10 flex flex-col">
         <Connect />
         <SkillCard />
       </div>

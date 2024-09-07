@@ -22,133 +22,42 @@ import {
   SiJira,
   SiNodedotjs,
   SiDocker,
+  SiKibana,
 } from '@icons-pack/react-simple-icons'
-import { FloatingDock } from '../ui/floating-dock'
+// import Marquee from 'react-fast-marquee'
+import IconMarquee from '@/components/ui/icon-marquee'
 
 const SkillCard = React.memo(() => {
-
-  const otherLinks = [
-    {
-      title: 'Ansible',
-      icon: <SiAnsible className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-      href: '#',
-    },
-    {
-      title: 'Git',
-      icon: <SiGit className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-      href: '#',
-    },
-    {
-      title: 'Jira',
-      icon: <SiJira className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-      href: '#',
-    },
-    {
-      title: 'Docker',
-      icon: <SiDocker className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-      href: '#',
-    },
-    {
-      title: 'Figma',
-      icon: <SiFigma className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-      href: '#',
-    },
-    {
-      title: 'Linux',
-      icon: <SiLinux className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-      href: '#',
-    },
+  const icons = [
+    <SiJavascript key="js" className="mx-4 size-10 size-10" />,
+    <SiReact key="rc" className="mx-4 size-10 size-10" />,
+    <SiPython key="py" className="mx-4 size-10" />,
+    <SiNextdotjs key="nj" className="mx-4 size-10" />,
+    <SiNodedotjs key="nx" className="mx-4 size-10" />,
+    <SiTypescript key="ts" className="mx-4 size-10" />,
+    <SiTailwindcss key="tw" className="mx-4 size-10" />,
+    <SiGit key="git" className="mx-4 size-10" />,
   ]
 
-  const obsLinks = [
-    {
-      title: 'OpenSearch',
-      icon: <SiOpensearch className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-      href: '#',
-    },
-    {
-      title: 'ElasticSearch',
-      icon: <SiElasticsearch className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-      href: '#',
-    },
-    {
-      title: 'Dynatrace',
-      icon: <SiDynatrace className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-      href: '#',
-    },
-  ] 
+  const icons2 = [
+    <SiAmazonwebservices key="1" className="mx-4 size-10 size-10" />,
+    <SiAmazoncloudwatch key="2" className="mx-4 size-10 size-10" />,
+    <SiOpensearch key="3" className="mx-4 size-10 size-10" />,
+    <SiAwslambda key="4" className="mx-4 size-10 size-10" />,
+    <SiElasticsearch key="js5" className="mx-4 size-10 size-10" />,
+    <SiKibana key="6" className="mx-4 size-10 size-10" />,
+    <SiDynatrace key="7" className="mx-4 size-10 size-10" />,
+    <SiJira key="8" className="mx-4 size-10 size-10" />
+  ]
+
+  const icons3 = [
+  <SiAnsible key="1" className="mx-4 size-10 size-10" />,
+  <SiFigma key="2" className="mx-4 size-10 size-10" />,
+  <SiLinux key="3" className="mx-4 size-10 size-10" />,
+  <SiDocker key="4" className="mx-4 size-10 size-10" />,
+  <SiAdobelightroom key="5" className="mx-4 size-10 size-10" />,
   
-  const cloudLinks = [
-     {
-       title: 'AWS',
-       icon: (
-         <SiAmazonwebservices className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-       ),
-       href: '#',
-     },
-     {
-       title: 'AWS Lambda',
-       icon: <SiAwslambda className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-       href: '#',
-     },
-     {
-       title: 'AWS CloudWatch',
-       icon: <SiAmazoncloudwatch className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-       href: '#',
-     },
-   ]
-   const programeLanguageLinks = [
-     {
-       title: 'JavaScript',
-       icon: <SiJavascript className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-       href: '#',
-     },
-     {
-       title: 'React',
-       icon: <SiReact className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-       href: '#',
-     },
-     {
-       title: 'Python',
-       icon: <SiPython className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-       href: '#',
-     },
-     //  {
-     //    title: 'Aceternity UI',
-     //    icon: (
-     //      <Image
-     //        src="https://assets.aceternity.com/logo-dark.png"
-     //        width={20}
-     //        height={20}
-     //        alt="Aceternity Logo"
-     //      />
-     //    ),
-     //    href: '#',
-     //  },
-     {
-       title: 'Next.JS',
-       icon: <SiNextdotjs className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-       href: '#',
-     },
-
-     {
-       title: 'TypeScript',
-       icon: <SiTypescript className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-       href: '#',
-     },
-     {
-       title: 'Node.Js',
-       icon: <SiNodedotjs className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-       href: '#',
-     },
-     {
-       title: 'TailwindCSS',
-       icon: <SiTailwindcss className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-       href: '#',
-     },
-   ]
-
-  const allLinks = [...programeLanguageLinks, ...cloudLinks, ...obsLinks,...otherLinks]
+  ]
 
   return (
     <div className="flex flex-col gap-10 rounded-xl p-4 shadow-feature-card dark:shadow-feature-card-dark lg:p-6">
@@ -157,12 +66,11 @@ const SkillCard = React.memo(() => {
         <h2 className="text-sm font-light">Skills</h2>
       </div>
 
-      <div className="flex items-start w-full my-4 ">
-        <FloatingDock
-          mobileClassName="translate-y-10" // only for demo, remove for production
-          items={allLinks}
-        />
-        
+      {/* Use Marquee instead */}
+      <div className="flex flex-col gap-5">
+        <IconMarquee icons = {icons} direction='left'/>
+        <IconMarquee icons = {icons2} direction='right'/>
+        <IconMarquee icons = {icons3} direction='left'/>
       </div>
     </div>
   )
