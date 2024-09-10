@@ -9,7 +9,7 @@ const Connect = React.memo(() => {
         <Link className="h-[18px] w-[18px]" />
         <h2 className="text-sm font-light">Connect</h2>
       </div>
-      <div className="grid grid-cols-3 gap-4 px-2">
+      <div className="flex flex-col gap-4 px-2">
         {SOCIAL_LINKS.map(({ href, title, icon: Icon }) => {
           const linkHref = title === 'Email' ? `mailto:${href}` : href
           const linkClasses =
