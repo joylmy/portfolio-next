@@ -6,6 +6,7 @@ import { formatDate } from 'pliny/utils/formatDate'
 import Hero from '@/components/home/Hero'
 import { motion, useScroll } from 'framer-motion'
 import AboutMe from '@/components/home/AboutMe'
+import FriendsRegard from '@/components/home/FriendsRegard'
 
 
 // const MAX_DISPLAY = 5
@@ -19,6 +20,7 @@ export default function Home({ posts }) {
       {/* About Me */}
       <AboutMe />
       {/* Friends' Regard */}
+      <FriendsRegard />
       {/* Latest Articles */}
       {/* <div>
         <div className="divide-y divide-gray-200 dark:divide-gray-700">
