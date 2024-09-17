@@ -24,7 +24,9 @@ const AboutMe = () => {
           <SkillCard />
           {/* Maybe spotify card? */}
         </div>
+        
       </div>
+
     </div>
   )
 }
